@@ -1,5 +1,5 @@
 {
-  "name": "db_init",
+  "name": "get-label",
   "dependencies": {},
   "extensions": {
     "uni-cloud-jql": {}

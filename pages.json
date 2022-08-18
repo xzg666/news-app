@@ -4,8 +4,9 @@
             "path" : "pages/tabbar/index/index",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": "首页",
+                "navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
             }
             
         }
