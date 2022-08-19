@@ -35,8 +35,9 @@
 		},
 		watch:{
 			tab(newVal){
-				console.log(123,newVal)
 				if(newVal.length === 0) return
+				this.listCacheData = {}
+				this.load = {}
 				this.getList(this.activeIndex)
 			}
 		},

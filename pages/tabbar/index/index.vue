@@ -21,6 +21,12 @@
 			}
 		},
 		onLoad(){
+			uni.$on('labelChange',()=>{
+				this.tabList = []
+				this.tabIndex = 0
+				this.activeIndex = 0
+				this.getLabel()
+			})
 			this.getLabel()
 		},
 		methods: {
@@ -48,13 +54,16 @@
 
 <style lang="scss">
 page{
+	width: 100%;
 	height: 100%;
 	display: flex;
 }
 .home{
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	.home-list{
+		width: 100%;
 		height: 100%;
 	}
 }
