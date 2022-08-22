@@ -2,6 +2,12 @@
 	export default {
 		onLaunch: function() {
 			console.log('App Launch')
+			this.$api.get_user({
+				user_id:"62fc63d31fb53f0001f599ff"
+			}).then(res=>{
+				this.$store.dispatch('set_userinfo',res.data[0])
+				// console.log(res)
+			})
 		},
 		onShow: function() {
 			console.log('App Show')
@@ -13,6 +19,7 @@
 </script>
 
 <style>
+	@import 'components/gaoyia-parse/parse.css';
 	/*每个页面公共css */
 		/* 解决小程序和app滚动条的问题 */
 		/* #ifdef MP-WEIXIN || APP-PLUS */

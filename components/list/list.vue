@@ -42,7 +42,12 @@
 			}
 		},
 		created(){
-			this.getList(0)
+			// this.getList(0)
+			uni.$on('update_article',()=>{
+				this.listCacheData = {}
+				this.load = {}
+				this.getList(this.activeIndex)
+			})
 		},
 		methods:{
 			loadmore(){
