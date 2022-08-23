@@ -60,4 +60,13 @@
 .navbar .navbar-fix .navbar-content .navbar-search .navbar-search-text {
   margin-left: 5px;
 }
+.navbar .navbar-fix .navbar-content.search {
+  padding-left: 0;
+}
+.navbar .navbar-fix .navbar-content.search .navbar-content__search-icons {
+  margin: 0 10px;
+}
+.navbar .navbar-fix .navbar-content.search .navbar-search {
+  border-radius: 5px;
+}
 

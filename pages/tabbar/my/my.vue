@@ -60,6 +60,7 @@
 				})
 			},
 			openAdvise(){
+				console.log('反馈')
 				uni.navigateTo({
 					url:'/pages/advise/advise'
 				})

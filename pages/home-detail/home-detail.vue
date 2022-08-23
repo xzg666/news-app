@@ -234,9 +234,11 @@
 			}
 			.detail-header__content-info {
 				color: #999;
+				flex-grow: 0;
+				font-size: 12px;
 			
 				text {
-					margin-right: 10px;
+					margin-right: 4px;
 				}
 			}
 		}
@@ -244,6 +246,8 @@
 			height: 30px;
 			font-size: 12px;
 			color: #fff;
+			padding: 2px 5px;
+			box-sizing: border-box;
 			background-color: $na-base-color;
 		}
 	}
